@@ -50,35 +50,18 @@ Console.WriteLine(sum);
 ////////
 
 
-int a = Convert.ToInt32(Console.ReadLine());
-if (a < 1)
+double n = Convert.ToInt32(Console.ReadLine());
+while (n % 2 == 0)
 {
-    Console.WriteLine("2 nin quvveti deyil");
-
-
+  n /= 2;
+}
+if ( n == 1)
+{
+Console.WriteLine("2 quvvetidir");
 }
 else
 {
-    while(a > 1)
-    {
-
-        if ( a % 2 != 0)
-        {
-
-            Console.WriteLine("2 nin quvvetine uygun deyil");
-            break;
-        }
-
-        a = a / 2;
-
-    }
-
-    if (a % 2 == 0)
-    {
-
-        Console.WriteLine("2 nin quvvetidir");
-
-    }
+    Console.WriteLine(" 2 nin quvveti deyil");
 }
 /////////
 
